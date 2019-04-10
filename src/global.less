@@ -1,0 +1,393 @@
+@import '~@/common.less';
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-width: @container;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif !important;
+  font-size: 14px;
+  background: #f7f7f7;
+}
+#root {
+  min-height: 100%;
+  position: relative;
+}
+ul, li {
+  list-style: none;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+b {
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: @base_text_color;
+  &:hover {
+    color:@main;
+  }
+}
+button {
+  cursor: pointer;
+  outline:none;
+}
+// 版心
+.container {
+  width: @container;
+  margin: 0 auto;
+}
+.container::after {
+  .cf;
+}
+
+.badge {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  background-color: @notice;
+  border-radius: 50%;
+  color: #fff;
+  transform: scale(0.8);
+  top: -5px;
+  right: -5px;
+  border: 1px solid #fff;
+}
+.CarouselStyle {
+  .ant-carousel .slick-slide {
+    text-align: center;
+    height: 240px;
+    line-height: 240px;
+    background: #364d79;
+    overflow: hidden;
+  }
+  img {
+    width: 1200px;
+    height: 240;
+  }
+}
+.shareCon {
+  color: #1a1a1a;
+  .moreShare {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      color: #1a1a1a;
+      font-size: 12px;
+    i {
+        cursor: pointer;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../src/assets/loginSprite.png);
+        margin: 0 5px;
+    }
+    span {
+      color: #b3b3b3;
+      margin-left: 10px;
+    }
+    input {
+        width: 600px;
+        height: 26px;
+        border-radius: 2px;
+        border: 1px solid #e6e6e6;
+        outline:none;
+        padding-left: 10px;
+    }
+    .wechaticon {
+        background-position: -50px -22px;
+    }
+    .qqicon {
+        background-position: 0 -22px;
+    }
+    .weiboicon {
+        background-position: -25px -22px;
+    }
+  }
+  & > li {
+    margin-bottom: 20px;
+  }
+}
+.ant-radio-button-wrapper::before {
+  background: #fff !important;
+}
+.popUpCon {
+  .topicChoose {
+    .ant-checkbox-group-item {
+      width: 45%;
+    }
+  }
+  .peopleChoose {
+    .ant-checkbox-group-item {
+      //width: 22%;
+    }
+  }
+  .ant-form-item {
+    margin-bottom: 5px;
+  }
+  .ant-statistic {
+    width: 30%;
+  }
+  .ant-statistic-content {
+    font-size: 16px !important;
+  }
+}
+.antd-globals {
+  // 倒计时
+  .ant-statistic-title {
+    font-size: 18px !important;
+  }
+  .ant-radio-button-wrapper {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+  }
+  .ant-rate-star {
+    margin-right: 4px;
+  }
+  .ant-rate {
+    color: #FF9900 !important;
+    font-size: 16px;
+    text-align: center;
+  }
+  .ant-rate-star {
+    margin-right: 6px;
+  }
+  .topicBtn {
+    .ant-radio-button-wrapper {
+      color: #808080 !important;
+    }
+    .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      color: #fff !important;
+    }
+  }
+  .ant-select {
+    height: 32px;
+  }
+  .ant-select-selection--multiple::before, .ant-select-selection--multiple::after {
+    content: '';
+    display: none;
+  }
+}
+.ResourceBasketDelete{
+	color:#ed3624;
+}
+.ant-input-number-input{
+	text-align: center!important;
+}
+//个人信息
+.anticon{
+  text-align: right!important;
+}
+.ant-collapse .ant-collapse-item .ant-collapse-header .anticon {
+  left: initial!important;
+  right: 16px!important;
+}
+.index__personalInfoLeft___2llqq{
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header{
+    padding-left: 20px!important;
+  }
+  .ant-collapse-header{
+    background: #fff;
+  }
+  .ant-collapse-item{
+    svg{
+      transform: rotate(-90deg);
+    }
+  }
+  .ant-collapse{
+    border: none;
+    .ant-collapse-item{
+      border: none;
+    }
+  } 
+  .ant-collapse-content{
+    border:1px solid #f8f8f8;
+  }
+}
+// .ant-select-selection {
+//   border: 1px solid #ccc !important;
+// }
+.user__personalInfoRight___1NQs9{
+  .ant-select-arrow{
+    .ant-select-arrow-icon{
+      margin-right: -12px!important;
+    }
+  }
+  .ant-progress-inner{
+    height: 24px;
+  }
+  .ant-table-thead{
+    tr{
+      th{
+        background: #f2f2f2;
+      }
+    }
+  }
+  .ant-table-tbody{
+    tr{
+      td{
+        color: #666;
+      }
+    }
+  }
+}
+.user__addClassSubjectModal___cgTMR{
+  .ant-radio-group{
+    width: 294px!important;
+  }
+}
+// 上传文件样式
+// .ZwebuploadStyle {
+//   .uploader .queueList {
+//     margin: 10px 20px 0 20px;
+//   }
+//   .uploader .placeholder {
+//     border: 0;
+//     text-align: left;
+//   }
+//   .uploader .placeholder .webuploader-pick {
+//     margin: 0 auto;
+//     padding: 0 20px;
+//     font-size: 14px;
+//     background: #6fc400;
+//     border-radius: 4px;
+//     line-height: 32px;
+//   }
+//   .uploader .statusBar {
+//     height: 24px;
+//     border-top: 0;
+//     line-height: 24px;
+//     margin-left: 26px;
+//   }
+// }
+
+// 视频播放器按钮居中
+.video-react .video-react-big-play-button {
+  top: 217px !important;
+  left: 367px !important;
+}
+//uploadwords的进度条
+.ant-steps-item-icon{
+  width: 55px!important;
+  height: 55px!important;
+  line-height: 55px!important;
+}
+.ant-steps-item-tail{
+  top:23px!important;
+  margin-left: 68px!important;
+}
+.ant-steps-item-tail::after {
+  height: 2px!important;
+}
+.ant-steps-label-vertical .ant-steps-item-content{ 
+  margin-left: 10px;
+}
+.activity__UploadWorks___reOG3{       
+  .ant-steps-item-wait {
+    .ant-steps-item-icon{
+      border-radius: 50%!important;
+      background-color: #f2f2f2;
+      border-color: #f2f2f2!important;
+      
+      .ant-steps-icon{
+        color: #999;
+      }
+    }
+  }
+  .ant-steps-item-icon{
+    font-size: 20px;
+  }
+  .ant-steps-item-process{
+    .ant-steps-icon{
+      font-weight: bold;
+      // font-family: "微软雅黑";
+    }
+    .ant-steps-item-description{
+      color: #b2b2b2!important;
+    }
+  }
+  .ant-steps-item-wait {
+    .ant-steps-item-content {
+      .ant-steps-item-description{
+        color: #b2b2b2;
+      }
+    } 
+  } 
+  .ant-steps-item-tail::after{
+    background:#f2f2f2;
+  }
+  .ant-steps-item-finish{
+    .ant-steps-item-icon{
+      border-width: 2px;
+    }
+    .ant-steps-finish-icon{
+      svg{
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+// 轻提示样式
+.ant-tooltip-arrow {
+  border-bottom-color: rgba(0, 0, 0, 0.5) !important;
+}
+.ant-tooltip-inner {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+// pdf预览按钮样式
+.pager {
+  position: relative;
+  .previous {
+    position: absolute;
+    right: 90px;
+  }
+  .next {
+    position: absolute; 
+    right: 10px;
+  }
+  & > li {
+    width: 80px;
+    & > a {
+      background: #6fc400;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+  }
+}
+//newexerciese
+.resource__NewExercises___3q1ny{
+  .ant-select-selection--multiple{
+    max-height:32px;
+  }
+}
+//actDetail 底部标题样式
+.activity__moreCon___2M71F{
+  .utilsView__lineTitle___C6FAG{
+    padding-left: 100px!important;
+  }
+}
+//去掉所有按钮的阴影
+  .ant-btn{
+    box-shadow: none!important;
+  }
+.antd-knowledgetrees {
+  .ant-radio-button-wrapper {
+    height: 36px !important;
+    line-height: 36px;
+  }
+  text-align: center;
+}
+

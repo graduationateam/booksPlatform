@@ -1,0 +1,38 @@
+@import '~@/common.less';
+@width:220px;
+@height:165px;
+.Fwindow{
+  width:@width;
+  height:@height;
+  margin:0 auto 20px;
+  // position:fixed;
+  // top:20%;
+  // right: 8%;
+  .container{
+    width:@width;
+    height:@height;
+    position:relative;
+      .link{
+        width:@width;
+        height:@height;
+        display:block;
+        .img{
+          width:@width;
+          height:@height;
+          border-radius: 5px;
+        }
+      }
+      .cancel{
+        position:absolute;
+        top:-15px;
+        right:-10px;
+        width:20px;
+        height:20px;
+        border-radius:50%;
+        text-align:center;
+        line-height:20px;
+        font-size:14px;
+        cursor:pointer;
+      }
+  }
+}
